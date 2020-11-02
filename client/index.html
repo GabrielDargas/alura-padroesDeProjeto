@@ -10,7 +10,7 @@
 <body class="container">
     
     <h1 class="text-center">Negociações</h1>
-    
+    <div id='mensagem-view' ></div>
     <form class="form" onsubmit="negociacaoControle.adiciona(event)">
         
         <div class="form-group">
@@ -43,13 +43,16 @@
     <br>
     
     <div id='negociacoesView'>
-        
+
     </div>
+    <script src="../server/app/view/View.js"></script>
     <script src="../server/app/models/Negociacao.js"></script>
+    <script src="../server/app/models/Mensagem.js"></script>
     <script src="../server/app/models/ListaNegociacoes.js"></script>
     <script src="../server/app/controllers/NegociacaoControle.js"></script>
     <script src="../server/app/helper/DateHelper.js"></script>
     <script src="../server/app/view/NegociacaoView.js"></script>
+    <script src="../server/app/view/MensagemView.js"></script>
     <script>
         let negociacaoControle = new NegociacaoControle();
 
